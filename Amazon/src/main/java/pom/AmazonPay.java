@@ -14,7 +14,7 @@ public class AmazonPay{
 	private WebElement mobileRecharge;
 	
 	@FindBy(xpath="//span[text()='Mobile Recharge']")
-	private WebElement helpMe;
+	private WebElement helpMePlease;
 	
 	public AmazonPay(WebDriver driver)
 	{
