@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Failed suite [regressionSuit]]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="ChromeTest(failed)(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="passionate.TestClassMobileRecharge">
+        <methods>
+          <include name="verifyMobileRechareButton"/>
+          <include name="lauchBrowser"/>
+          <include name="clearPOMClassObjectReferences"/>
+          <include name="logoutFromTheApplication"/>
+          <include name="verifyPayButton"/>
+          <include name="launchTheBrowser"/>
+          <include name="closeTheBrowser"/>
+          <include name="loginToTheApplication"/>
+        </methods>
+      </class> <!-- passionate.TestClassMobileRecharge -->
+    </classes>
+  </test> <!-- ChromeTest(failed)(failed) -->
+  <test thread-count="2" parallel="classes" name="EdgeTest(failed)(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="passionate.TestClassMobileRecharge">
+        <methods>
+          <include name="lauchBrowser"/>
+          <include name="verifyMobileRechareButton"/>
+          <include name="clearPOMClassObjectReferences"/>
+          <include name="verifyPayButton"/>
+          <include name="logoutFromTheApplication"/>
+          <include name="launchTheBrowser"/>
+          <include name="closeTheBrowser"/>
+          <include name="loginToTheApplication"/>
+        </methods>
+      </class> <!-- passionate.TestClassMobileRecharge -->
+    </classes>
+  </test> <!-- EdgeTest(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [regressionSuit]] -->

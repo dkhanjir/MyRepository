@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="regressionSuit" thread-count = "2" parallel = "classes">
+    <listeners>
+       <listener class-name="extendReport.ExtentTestNGIReporterListener"/>
+    </listeners>
+  
+  <test name="ChromeTest">
+  <parameter name="browser" value="Chrome"/>
+   
+    <classes>
+      <class name="passionate.TestClassHeader">
+        <methods>
+           <include name ="verifyRetrunsAndOrdersTab"/>
+        </methods>
+      </class>
+      <class name="passionate.TestClassMobileRecharge"/>
+
+    </classes>
+    
+  </test> <!-- Test -->
+ 
+   <test name="EdgeTest">
+   <parameter name="browser" value="Edge"/>
+    
+     <classes>
+       <class name="passionate.TestClassHeader">
+          <methods>
+             <include name ="verifyRetrunsAndOrdersTab"/>
+          </methods>
+       </class>
+       
+       <class name="passionate.TestClassMobileRecharge"/>
+      
+     </classes>
+   </test> <!-- Test -->
+   
+</suite> <!-- regressionSuit -->
