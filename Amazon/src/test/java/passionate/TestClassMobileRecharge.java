@@ -132,14 +132,14 @@ public class TestClassMobileRecharge extends Browser {
 	    result = mobileRechargePage.verifyVisibilityOfEditOperatorAndCircleButton();
 //	    SoftAssert softAssert = new SoftAssert();
 	    softAssert.assertEquals(result,false,"Edit operator and circle button is visible");//String message will be printed on he console 
-	                                                                                     // only when condition fails.
-	   
+	                                                                               // only when condition fails.
+	    
 	    
 	    mobileRechargePage.sendMobileNumber();
 	    result = mobileRechargePage.verifyVisibilityOfEditOperatorAndCircleButton();
 	    softAssert.assertTrue(result);
 	    softAssert.assertAll();//For every method which has soft assert in it last line of it must be this line.
-		
+	    
 	}
 
 

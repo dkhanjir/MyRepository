@@ -222,7 +222,7 @@ public class TestClassHeader extends Browser {
 		applicationHeaderPage  = null;
 		applicationHomePage  =  null;
 		signInPage  = null;
-		
+	
 	}
 	
 	
