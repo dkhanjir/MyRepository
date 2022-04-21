@@ -3,17 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="passionate.TestClassMobileRecharge">
+      <class name="passionate.TestClassHeader">
         <methods>
-          <include name="lauchBrowser"/>
+          <include name="verifyCartTab"/>
           <include name="clearPOMClassObjectReferences"/>
-          <include name="logoutFromTheApplication"/>
-          <include name="verifyPayButton"/>
-          <include name="launchTheBrowser"/>
+          <include name="lauchBrowser"/>
+          <include name="verifyRetrunsAndOrdersTab"/>
+          <include name="signInToApplication"/>
+          <include name="logoutFromApplication"/>
+          <include name="createObjectOfPOMClasses"/>
           <include name="closeTheBrowser"/>
-          <include name="loginToTheApplication"/>
+          <include name="verifyAmazonPayTab"/>
         </methods>
-      </class> <!-- passionate.TestClassMobileRecharge -->
+      </class> <!-- passionate.TestClassHeader -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
